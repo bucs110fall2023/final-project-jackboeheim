@@ -20,7 +20,9 @@ My project is a 3D raycasting algorithm similar to the algorithm used in early 3
 
 ### Initial Design
 
-[![initial gui](assets/gui.jpg)](https://www.google.com/url?sa=i&url=https%3A%2F%2Flodev.org%2Fcgtutor%2Fraycasting.html&psig=AOvVaw3ZxyCDM2jgsaXlNPop4npo&ust=1702538200544000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNig0Znvi4MDFQAAAAAdAAAAABAD)
+(Because this algorithm is unorignal, I attached an image from another programmer, which served as an inspiration)
+
+![image](https://github.com/bucs110fall2023/final-project-jackboeheim/assets/143842028/6e22b981-487d-4443-8678-0648e44fb923)
 
 ### Final Design
 
@@ -31,8 +33,7 @@ My project is a 3D raycasting algorithm similar to the algorithm used in early 3
 
 ### Features
 
-1. This program allo![image](https://github.com/bucs110fall2023/final-project-jackboeheim/assets/143842028/6e22b981-487d-4443-8678-0648e44fb923)
-ws the user to walk forward and backward and look left and right
+1. This program allows the user to walk forward and backward and look left and right
 2. The program saves the user's data automatically every frame, so whenever the program is launched, the player is in the same position and facing the same direction
 3. The program features collision detection, disallowing the user from walking into walls
 4. Wall colors can easily be modified in the code and currently 3 different color walls are present
