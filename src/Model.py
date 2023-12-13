@@ -4,15 +4,36 @@ import pygame
 
 class Model:
     def __init__(self, player = None):
+        """
+        Initializes instance of model using an instance of the controller, called player, and defines the screen
+        Inputs: player(Controller)
+        Outputs N/A
+        """
         self.player = player
-        self.screen = pygame.display.get_surface()
+        self.screen = pygame.display.set_mode(Constants.SCREEN_SIZE)
 
     def draw_floor_ceiling(self):
+        """
+        Draws floor and ceiling using colored rectangles
+        Inputs: self.screen(Surface)
+        Outputs: N/A
+        """
         self.screen.fill(Constants.LIGHT_GRAY, pygame.Rect((0,Constants.SCREEN_HEIGHT//2), (Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT//2)))
         self.screen.fill(Constants.DARK_GREY, pygame.Rect((0,0), (Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT//2)))
 
     def raycast(self):
-        
+        """
+        Raycasting algorithm: Uses player's state and effectively draws rays to nearest wall and draws a sliver of wall which is
+        inversely proportional in its height to the ray distance. Then uses this distance adn the color and side of the wall hit
+        to draw all of the walls
+        Inputs: self.player.angle(double)
+                self.player.mapX(int)
+                self.player.x(double)
+                self.player.mapY(int)
+                self.player.y(double)
+                self.screen(Surface)
+        Outputs: N/A
+        """
         ray_angle = self.player.angle - Constants.FOV/2 + 1e-6
 
         x = Constants.LINE_WIDTH/2
