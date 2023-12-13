@@ -1,6 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13227157&assignment_repo_type=AssignmentRepo)
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
-
 # Raycasting Algorithm
 ## CS110 Final Project  Fall 2023
 
@@ -12,7 +9,7 @@ Jack Boeheim
 
 ## Project Description
 
-My project is a 3D raycasting algorithm similar to the algorithm used in early 3D games like Wolfenstein 3D and the original DOOM game. 
+My project is a 3D raycasting algorithm similar to the algorithm used in early 3D games like Wolfenstein 3D and the original DOOM game. The only additional module that was necessary was the math module for trigonometric functions. The project files are sorted by all additional classes and .py files in the srcs folder and the save .txt file in the etc folder.
 
 ***    
 
